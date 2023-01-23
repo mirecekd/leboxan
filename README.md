@@ -65,3 +65,5 @@ action:
 ![leboxan](pic/IMG_20230123_123450.jpg)     
 ![leboxan](pic/IMG_20230123_123502.jpg)
 
+#### final note
+blue wire only helps to pull sensor out
