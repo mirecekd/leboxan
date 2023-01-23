@@ -30,6 +30,33 @@ https://www.tinkercad.com/things/dTlbBKHksg4?sharecode=Zzq38p6rL5rD39_FJC4A53y84
 
 (files)[stl]
 
+## Home Assistant
+
+sensor goes via mqtt to `binary_sensor.magnet_schranka`
+
+![leboxan](conf/leboxan-ha-1.png) 
+
+
+### automation configuration
+```
+alias: Open of letter box
+description: ""
+trigger:
+  - platform: state
+    entity_id:
+      - binary_sensor.magnet_schranka
+    to: "on"
+condition: []
+action:
+  - data:
+      data:
+        photo:
+          - url: >-
+              https://ha.ip.addresaa:port{{states.camera.besder_brana.attributes.entity_picture}}
+      message: Schránka byla otevřena
+    service: notify.telegram_mirecek
+```
+
 ## Photos
 
 ![leboxan](pic/IMG_20230123_123331.jpg) 
