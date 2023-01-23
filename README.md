@@ -28,7 +28,7 @@ https://www.tinkercad.com/things/dTlbBKHksg4?sharecode=Zzq38p6rL5rD39_FJC4A53y84
 
 ### STLs
 
-(files)[stl]
+STLs are located in [stl](stl) dir.
 
 ## Home Assistant
 
